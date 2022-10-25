@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="money.css">
+    <script defer src="money.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <table border="1">
+            <caption>가계부</caption>
+            <tr>
+                <th>날짜</th>
+                <th>수입</th>
+                <th>지출</th>
+                <th>금액</th>
+            </tr>
+            <!-- 31줄의 날짜별 기록 -->
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+    
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+    
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+    
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+    
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+            <tr class="write"></tr>
+    
+            <tr>
+                <th>합계</th>
+                <td class="totalincome"></td> <!-- 수입합계-->
+                <td class="totalexpenditure"></td> <!-- 지출합계 -->
+                <td class="total"></td> <!-- 최종합계 -->
+            </tr>
+        </table>
+    
+        <aside>
+            <fieldset>
+                <legend>입력란</legend>
+                <form>
+                    <ul>
+                        <li><input type="date"></li>
+                        <li>
+                            <select>
+                                <option>수입</option>
+                                <option>지출</option>
+                            </select>
+                        </li>
+                        <li>
+                            <input type="text" name="money">
+                            <label name="money">원</label>
+                        </li>
+                        <li>
+                            <button>입력란</button>
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        
+            <div class="textarea">
+                <ul>
+                    <li>
+                        <b>일평균 수입</b>
+                        <p></p>
+                    </li>
+                    <li>
+                        <b>일평균 지출</b>
+                        <p></p>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+</body>
+</html>

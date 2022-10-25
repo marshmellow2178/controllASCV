@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0; padding: 0;
+}
+ul, li{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+table{
+    width: 40%;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+}
+table th, td{
+    padding: 5px 10px;
+}
+.write td:nth-of-type(1){
+    width: 40%;
+    text-align: center;
+}
+.write td:nth-of-type(2), .write td:nth-of-type(3), .write td:nth-of-type(4){
+    width: 20%;
+    text-align: right;
+} 
+.totalincome, .totalexpenditure, .total{
+    text-align: right;
+    font-weight: bold;
+}
+.totalincome{
+    color:blue;
+}
+.totalexpenditure{
+    color: red;
+}
+.wrapper{
+    width: 100vw; max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li p{
+    display: inline;
+}
+
+fieldset{
+    width: fit-content; height: fit-content;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+
+}
+form{
+    margin: 0; padding: 0;
+}
+
+.textarea{
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid lightgray;
+
+}
