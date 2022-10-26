@@ -14,7 +14,6 @@ a{text-decoration: none;}
 figure img{width: 100%; height: 100%;}
 section{
     margin: 50px auto;
-    padding: 0 50px; 
     width: 1480px; 
     overflow: hidden;
 }
@@ -143,14 +142,12 @@ header .sub p{
 .game > button:nth-of-type(2).active{
     display: block;
 }
-section ul{
+.game ul{
+    transition: 0.5s;
     width: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
-.game ul{
-    transition: 0.5s;
 }
 .game ul li{
     position: relative;
@@ -185,9 +182,13 @@ section ul{
 }
 /* =======================================================
 =======================section 2========================= */
+.news ul{
+    width: 1480px;
+    display: flex;
+    justify-content: space-between;
+}
 .news ul li{
-    width: 440px;
-    margin-right: 20px;
+    width: 30%;
     border: 1px solid lightgray;
     box-shadow: 1px 1px 5px lightgray;
 }

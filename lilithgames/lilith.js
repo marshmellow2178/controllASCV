@@ -101,7 +101,7 @@ const btnLeft = document.querySelector('.game > button:nth-of-type(1)');
 const btnRight = document.querySelector('.game > button:nth-of-type(2)');
 let listWidth = gameCards[0].offsetWidth+20;
 let fullwidth = games.offsetWidth - (listWidth*4); /* 내용을 이동시킬 거리 = 전체길이-마지막4개 */
-let standard = -50;/* 기준점을 잡고 이동(padding 만큼 더 이동해야 한다) */
+let standard = 0;/* 기준점을 잡고 이동*/
 
 function btnActive(standard){
     /* -offset<=x<0*/
@@ -119,7 +119,7 @@ function btnActive(standard){
     }
     console.log(standard);
 }
-btnActive(-50);
+btnActive(0);
 
 btnLeft.addEventListener('click', function(){
     standard += listWidth;
