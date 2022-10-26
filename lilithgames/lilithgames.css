@@ -1,0 +1,269 @@
+@charset "utf-8";
+html,body{ margin:0;}
+*{
+    box-sizing: border-box;
+}
+ul, li{
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, figure{
+    margin: 0; padding: 0;
+}
+a{text-decoration: none;}
+figure img{width: 100%; height: 100%;}
+section{
+    margin: 50px auto;
+    padding: 0 50px; 
+    width: 1480px; 
+    overflow: hidden;
+}
+.btn1{
+    background-color: #d32f2f;
+    border: none;
+    color: white;
+    width: 176px; height: 46px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+/* =================================================
+===========================header================== */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;/* 맨 위에 보이게 하기 */
+}
+header a img{width: 50%;}
+header nav a{
+    color: white;
+    margin: 5px;
+}
+header nav span{color: red;}
+header .sub{
+    position: absolute;
+    top: 58px; left: 0;
+    background-color: #000;
+    margin: 0 40px;
+    display: none;
+    transition: 1s;
+}
+header .sub.active{
+    display: block;
+}
+header .sub div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+header .sub figure{
+    margin: 5px;
+    width: 200px;
+}
+header .sub p{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+/* =================================
+================background============= */
+.background{
+    margin-top: 58px;
+    background-color: #000;
+}
+.background article div{
+    width: 100vw; height: 514px;
+    padding: 0 100px;
+    display: none;
+}
+.background article div.active{
+    display: block;
+}
+.background b{
+    font-size: 50px;
+    color: white;
+}
+.background p{
+    font-size: 24px;
+    color: white;
+}
+.background figure{width: 250px; padding: 60px 0 30px;}
+.background span{
+    width: 1480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.background span button{
+    width: 8%; height: 10px; margin: 5px 0;
+    background-color: darkgrey;
+}
+.background span button.active{
+    height: 15px;
+    background-color: #d32f2f;
+}
+
+/* =======================================================
+=====================section1============================ */
+
+.title{margin-bottom: 20px;}
+.title p{font-size: 30px; display: inline;}
+.title a{ color: #d32f2f;}
+
+.game{
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.game > button{
+    position: absolute;
+    width: 50px; height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    display: none;
+}
+
+.game > button:nth-of-type(1){
+    top: 50%; left: 0;
+}
+.game > button:nth-of-type(1).active{
+    display: block;
+}
+.game > button:nth-of-type(2){
+    top: 50%; right: 0;
+}
+.game > button:nth-of-type(2).active{
+    display: block;
+}
+section ul{
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.game ul{
+    transition: 0.5s;
+}
+.game ul li{
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    width: 355px; height: 550px;
+}
+.game ul li figure{
+    width: 33%;
+    position: absolute;
+    top: 90%; right: 33%;
+}
+.game ul li figure img{ border-radius: 30px;}/* 동그란 이미지 만들기 */
+.game ul li .textarea{
+    width: 100%; height: 50%;
+    padding-top: 120px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    display: none;
+}
+.game ul li:hover .textarea{
+    background: linear-gradient(rgb(255,255,255,0), black);
+    display: block;
+}
+.game ul li .textarea b{
+    font-size: 24px; 
+}
+.game ul li .textarea p{
+    font-size: 12px; margin-top: 10px;
+}
+/* =======================================================
+=======================section 2========================= */
+.news ul li{
+    width: 440px;
+    margin-right: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px lightgray;
+}
+.news ul li figure{
+    width: 100%;    
+    height: 250px;
+}
+.news ul li .textarea{
+    padding: 30px;
+    font-size: 14px;
+}
+.news ul li .textarea b{
+    display: block;
+    padding-bottom: 20px;
+}
+.news ul li .textarea a{color: lightgray;}
+
+/* ===================================================
+=================================================== */
+.join{
+    background: #000 url(img/joinus.png) center/cover no-repeat;
+    width: 100vw; height: 400px;
+}
+.join div{
+    padding: 120px 100px;
+    height: 100%;
+}
+.join h2{
+    font-size: 44px;
+    color: white;
+    padding-bottom: 40px;
+}
+.join p{
+    font-size: 22px;
+    color: white;
+    margin: 20px 0;
+}
+.join button{
+    background-color: #d32f2f;
+    border: none;
+    color: white;
+    width: 176px; height: 46px;
+    font-size: 18px;
+}
+
+.careers{
+    width: 100vw; 
+    background-color: lightgrey;
+}
+.careers ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.careers ul li{
+    margin: 20px 0;
+    padding: 0 10px;
+    border-right: 1px solid gray;
+}
+/* ===================================================
+==========================footer======================= */
+footer{
+    width: 100vw;
+    background-color: black;
+    padding: 80px 0 50px;   
+    text-align: center;
+    color: lightgray;
+    font-size: 12px;
+}
+footer nav{
+    width: 30%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer nav a{
+    color: lightgray;
+    font-size: 14px;
+}
